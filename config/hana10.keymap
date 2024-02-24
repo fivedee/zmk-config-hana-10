@@ -19,7 +19,7 @@
         base2_layer {
             bindings = <
                 &trans &kp LEFT_BRACKET &trans &kp RIGHT_BRACKET &kp V
-                AS(TAB) &trans           &kp X &trans         &trans
+                &kp TAB &trans           &kp X &trans         &trans
                                &to BONE_L &trans
             >;
         };
