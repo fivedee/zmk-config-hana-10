@@ -1,0 +1,8 @@
+file_format: 1
+id: hana10
+name: hana10
+type: shield
+requires:
+  - seeed_xiao
+features:
+  - keys

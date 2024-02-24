@@ -1,0 +1,6 @@
+if SHIELD_HANA10
+
+config ZMK_KEYBOARD_NAME
+    default "Hana10"
+
+endif

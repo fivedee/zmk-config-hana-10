@@ -1,0 +1,32 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+#define BONE_L 0
+#define BTWO_L 1
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        base_layer {
+            bindings = <
+                &lt BTWO_L ESC       &kp Q    &kp W     &kp E     &kp R
+                &kp LSHIFT    &kp A    &kp S     &kp D     &kp F
+                                    &kp LCTRL     &kp SPACE 
+            >;
+        };
+        
+        base2_layer {
+            bindings = <
+                &trans &kp LEFT_BRACKET &trans &kp RIGHT_BRACKET &kp V
+                AS(TAB) &trans           &kp X &trans         &trans 
+                               &to BONE_L &trans
+            >;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+        combo_bsp { timeout-ms = <50>; key-positions = <POS_2 POS_4>; bindings = <&kp BSPC>; layers = <COMB_L>; };
+    };
+};
