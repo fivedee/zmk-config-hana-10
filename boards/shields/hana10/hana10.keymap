@@ -8,8 +8,8 @@
         default_layer {
             bindings = <
                 &kp Q    &kp W    &kp E     &kp R     &kp T
-                &kp Z    &kp X    &kp C     &kp V     &kp B 
-                         &kp DEL   &kp RET    
+                &kp Z    &kp X    &kp C     &kp V     &kp B
+                         &kp DEL   &kp RET
             >;
         };
     };
