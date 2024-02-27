@@ -10,9 +10,9 @@
 
         base_layer {
             bindings = <
-                &lt BTWO_L ESC       &kp Q    &kp W     &kp E     &kp R
-                &kp LSHIFT    &kp A    &kp S     &kp D     &kp F
-                                    &kp LCTRL     &kp SPACE
+                &kp T       &kp Q    &kp W     &kp E     &kp R
+                &kp G       &kp A    &kp S     &kp D     &kp F
+                                    &kp Z     &kp X
             >;
         };
 
@@ -23,10 +23,5 @@
                                &to BONE_L &trans
             >;
         };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-        combo_bsp { timeout-ms = <50>; key-positions = <0 2>; bindings = <&kp BSPC>; layers = <BTWO_L>; };
     };
 };
